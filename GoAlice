@@ -22,10 +22,8 @@ echo "deb http://mirror.ufam.edu.br/ubuntu/ focal-backports main restricted univ
 echo "deb http://mirror.ufam.edu.br/ubuntu/ focal-security main restricted" >> sources.list
 echo "deb http://mirror.ufam.edu.br/ubuntu/ focal-security universe" >> sources.list
 echo "deb http://mirror.ufam.edu.br/ubuntu/ focal-security multiverse" >> sources.list
-echo "deb http://cz.archive.ubuntu.com/ubuntu bionic main universe" >> sources.list
-
 #Repo para instalar o libwebkitgtk
-echo -e "#Repositorio do Libwebkit\ndeb http://cz.archive.ubuntu.com/ubuntu bionic main universe" >> /etc/apt/sources.list
+echo "deb http://cz.archive.ubuntu.com/ubuntu bionic main universe" >> sources.list
 
 cd
 
