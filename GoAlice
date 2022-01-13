@@ -1,0 +1,42 @@
+#!/bin/bash
+
+# author: Cleiton Ramos dos Santos <sit_cramos@uolinc.com>
+# describe: prepara o equipamento para o homolog
+# version: 0.1
+# licence: MIT License
+
+#Alterando Sources
+
+cd
+cd /etc/apt/
+mv sources.list sources.list.bkp
+
+#Criando novo sources.list com server BR
+echo "deb http://mirror.ufam.edu.br/ubuntu/ focal main restricted" >> sources.list
+echo "deb http://mirror.ufam.edu.br/ubuntu/ focal-updates main restricted" >> sources.list
+echo "deb http://mirror.ufam.edu.br/ubuntu/ focal universe" >> sources.list
+echo "deb http://mirror.ufam.edu.br/ubuntu/ focal-updates universe" >> sources.list
+echo "deb http://mirror.ufam.edu.br/ubuntu/ focal multiverse" >> sources.list
+echo "deb http://mirror.ufam.edu.br/ubuntu/ focal-updates multiverse" >> sources.list
+echo "deb http://mirror.ufam.edu.br/ubuntu/ focal-backports main restricted universe multiverse" >> sources.list
+echo "deb http://mirror.ufam.edu.br/ubuntu/ focal-security main restricted" >> sources.list
+echo "deb http://mirror.ufam.edu.br/ubuntu/ focal-security universe" >> sources.list
+echo "deb http://mirror.ufam.edu.br/ubuntu/ focal-security multiverse" >> sources.list
+echo "deb http://cz.archive.ubuntu.com/ubuntu bionic main universe" >> sources.list
+
+cd
+
+#Tunando Conexao do Dell Latitude 5420 
+echo on | sudo tee /sys/bus/pci/devices/0000\:0016.0/power/control
+
+#Atualizando Repos e Atualizando Apps
+apt-get update -y && apt-get upgrade -y
+
+#baixando o homolog
+wget --no-check-certificate https://repo.uolcorp.intranet/homolog/20/homolog.sh.x
+
+#Transformando o arquivo em Executavel
+chmod +x homolog.sh.x
+
+#Executando o homolog
+./homolog.sh.x
