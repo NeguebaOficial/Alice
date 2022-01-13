@@ -2,7 +2,7 @@
 
 # author: Cleiton Ramos dos Santos <sit_cramos@uolinc.com>
 # describe: prepara o equipamento para o homolog
-# version: 0.1
+# version: 0.2
 # licence: MIT License
 
 #Alterando Sources
@@ -24,6 +24,9 @@ echo "deb http://mirror.ufam.edu.br/ubuntu/ focal-security universe" >> sources.
 echo "deb http://mirror.ufam.edu.br/ubuntu/ focal-security multiverse" >> sources.list
 echo "deb http://cz.archive.ubuntu.com/ubuntu bionic main universe" >> sources.list
 
+#Repo para instalar o libwebkitgtk
+echo -e "#Repositorio do Libwebkit\ndeb http://cz.archive.ubuntu.com/ubuntu bionic main universe" >> /etc/apt/sources.list
+
 cd
 
 #Tunando Conexao do Dell Latitude 5420 
@@ -31,6 +34,10 @@ echo on | sudo tee /sys/bus/pci/devices/0000\:0016.0/power/control
 
 #Atualizando Repos e Atualizando Apps
 apt-get update -y && apt-get upgrade -y
+
+#Instalando libwebkitgtk
+echo "INSTALANDO LIBWEBKIT"
+apt-get install libwebkitgtk-1.0-0
 
 #baixando o homolog
 wget --no-check-certificate https://repo.uolcorp.intranet/homolog/20/homolog.sh.x
@@ -40,3 +47,4 @@ chmod +x homolog.sh.x
 
 #Executando o homolog
 ./homolog.sh.x
+
