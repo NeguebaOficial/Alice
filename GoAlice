@@ -40,13 +40,13 @@ echo on | sudo tee /sys/bus/pci/devices/0000\:0016.0/power/control
 apt-get update -y && apt-get upgrade -y
 
 #Instalando libwebkitgtk
-echo "INSTALANDO LIBWEBKIT"
 apt-get install libwebkitgtk-1.0-0 -y
 
 #Instalando AnyDesk
 apt-get install anydesk -y
 
 #Instalando Pulse
+cd /Alice
 dpkg -i pulse-9.1R4.x86_64.deb
 
 
@@ -58,7 +58,3 @@ wget --no-check-certificate https://repo.uolcorp.intranet/homolog/20/homolog.sh.
 
 #Transformando o arquivo em Executavel
 chmod +x homolog.sh.x
-
-#Executando o homolog
-./homolog.sh.x
-
