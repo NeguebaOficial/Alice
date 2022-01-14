@@ -47,6 +47,8 @@ apt-get install anydesk -y
 
 #Instalando Pulse
 cd /Alice
+chmod +x pulse-9.1R4.x86_64.deb
+echo "INSTALANDO PULSE - TECLE Y"
 dpkg -i pulse-9.1R4.x86_64.deb
 
 
