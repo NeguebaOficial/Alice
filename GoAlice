@@ -45,21 +45,17 @@ apt-get install anydesk -y
 
 #Instalando Pulse
 chmod +x pulse-9.1R4.x86_64.deb
-echo "INSTALANDO PULSE - TECLE Y"
 dpkg -i pulse-9.1R4.x86_64.deb
 
 #Instalando o net-tools
 apt-get install net-tools -y
 
-#baixando o homolog na raiz
-cd
-wget --no-check-certificate https://repo.uolcorp.intranet/homolog/20/homolog.sh.x
-
 #Transformando o arquivo em Executavel
 chmod +x homolog.sh.x
+cp homolog.sh.x /home/mutley
 
 #Deletando Alice
 chmod 777 /home/mutley/Alice
 rm -rf /home/mutley/Alice
 
-echo "HOMOLOG.SH.X ESTA NA RAIZ"
+zenety --info --text="HOMOLOG.SH.X ESTÁ NA /HOME/MUTLEY"
