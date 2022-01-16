@@ -1,3 +1,3 @@
-# Alice
+# Alice in crazy homologs
 
-Alice tem o objetivo de facilitar coisas do dia a dia no ambiente de trabalho (no meu ambiente claro).
+Alice tem apenas um objetivo, preparar o ambiente Ubuntu 20.04 para homologação.
