@@ -27,7 +27,7 @@ Alice tem apenas um objetivo, preparar o ambiente Ubuntu 20.04 para homologaçã
     ./GoAlice
   
 ## Conclusão:
-- Repositórios atualidos;
+- Repositórios atualizados;
 - Upgrade realizado;
 - PulseSecure instalado;
 - Anydesk instalado;
