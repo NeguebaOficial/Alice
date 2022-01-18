@@ -4,7 +4,19 @@ Alice tem apenas um objetivo, preparar o ambiente Ubuntu 20.04 para homologaçã
 
 ## Pré Requisitos:
 
-- Estar logado como root na pasta /home/mutley;
+- Instalar o git:
+    sudo apt-get update
+    sudo apt-get install git -y
+    
+- Estar logado como root:
+    sudo su
+    
+- Entrar na pasta mutley:
+    cd /home/mutley
+    
+- Clonar pasta Alice:
+    git clone https://github.com/NeguebaOficial/Alice
+    
 - Entrar na pasta Alice:
     cd /home/mutley/Alice
 
