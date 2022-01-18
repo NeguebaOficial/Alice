@@ -1,8 +1,8 @@
-# Alice in crazy homologs
+# :rabbit:Alice in crazy homologs:rabbit:
 
 Alice tem apenas um objetivo, preparar o ambiente Ubuntu 20.04 para homologação.
 
-## Pré Requisitos:
+## Pré Requisitos::neckbeard:
 
 - Instalar o git:
     sudo apt-get update
@@ -26,7 +26,7 @@ Alice tem apenas um objetivo, preparar o ambiente Ubuntu 20.04 para homologaçã
 - Executar o script:
     ./GoAlice
   
-## Conclusão:
+## Conclusão::floppy_disk:
 - Repositórios atualizados;
 - Upgrade realizado;
 - PulseSecure instalado;
@@ -34,4 +34,4 @@ Alice tem apenas um objetivo, preparar o ambiente Ubuntu 20.04 para homologaçã
 - NetTools instalado;
 - Homolog.sh.x copiado na area de trabalho;
 
-### Basta agora conectar na VPN e seguir com procedimento padrão de Homologação.
+### Basta agora conectar na VPN e seguir com procedimento padrão de Homologação.:books:
