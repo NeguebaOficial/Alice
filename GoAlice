@@ -2,7 +2,7 @@
 
 # author: Cleiton Ramos dos Santos <sit_cramos@uolinc.com>
 # describe: prepara o equipamento para o homolog
-# version: 0.4
+# version: 0.5
 # licence: MIT License
 
 #Alterando Sources
@@ -29,8 +29,6 @@ echo "deb http://deb.anydesk.com/ all main" >> sources.list
 #Adicionando permissão AnyDesk
 wget -qO - https://keys.anydesk.com/repos/DEB-GPG-KEY | apt-key add -
 
-cd /home/mutley/Alice
-
 #Tunando Conexao do Dell Latitude 5420 
 echo on | sudo tee /sys/bus/pci/devices/0000\:0016.0/power/control
 
@@ -44,18 +42,18 @@ apt-get install libwebkitgtk-1.0-0 -y
 apt-get install anydesk -y
 
 #Instalando Pulse
-chmod +x pulse-9.1R4.x86_64.deb
+cd /home/mutley/Alice
+chmod +x pulse-9.1R4.x86_64.deb homolog.sh.x
 dpkg -i pulse-9.1R4.x86_64.deb
 
 #Instalando o net-tools
 apt-get install net-tools -y
 
-#Transformando o arquivo em Executavel
-chmod +x homolog.sh.x
-cp homolog.sh.x /home/mutley
+#Copiando Homolog para Area de Trabalho
+cp homolog.sh.x /home/mutley/Desktop
 
 #Deletando Alice
 chmod 777 /home/mutley/Alice
 rm -rf /home/mutley/Alice
 
-zenety --info --text="HOMOLOG.SH.X ESTÁ NA /HOME/MUTLEY"
+zenity --info --text="HOMOLOG.SH.X ESTÁ NA /HOME/MUTLEY/DESKTOP"
