@@ -1,6 +1,8 @@
 # :rabbit:Alice in Crazy Homologs:rabbit:
-
 Alice tem apenas um objetivo, preparar o ambiente Ubuntu 20.04 para homologação.
+#### author: Cleiton Ramos dos Santos <sit_cramos@uolinc.com>
+#### describe: prepara o equipamento para o homolog
+#### version: 0.5
 
 ## :neckbeard:Pré Requisitos:
 
