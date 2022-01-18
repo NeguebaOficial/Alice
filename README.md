@@ -20,11 +20,11 @@ Alice tem apenas um objetivo, preparar o ambiente Ubuntu 20.04 para homologaçã
 - Entrar na pasta Alice:
     cd /home/mutley/Alice
 
-- Dar permissão para o arquivo "GoAlice":
-    chmod +x GoAlice
+- Dar permissão para o arquivo "GoAlice.x":
+    chmod +x GoAlice.x
     
 - Executar o script:
-    ./GoAlice
+    ./GoAlice.x
   
 ## :floppy_disk:Conclusão:
 - Repositórios atualizados;
