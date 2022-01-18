@@ -1,4 +1,4 @@
-# :rabbit:Alice in crazy homologs:rabbit:
+# :rabbit:Alice in Crazy Homologs:rabbit:
 
 Alice tem apenas um objetivo, preparar o ambiente Ubuntu 20.04 para homologação.
 
