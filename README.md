@@ -1,8 +1,8 @@
 # :rabbit:Alice in Crazy Homologs:rabbit:
 
-##### author: Cleiton Ramos dos Santos <sit_cramos@uolinc.com>
-##### describe: Alice tem apenas um objetivo, preparar o ambiente Ubuntu 20.04 para homologação.
-##### version: 0.5
+##### Author: Cleiton Ramos dos Santos <sit_cramos@uolinc.com>
+##### Describe: Alice tem apenas um objetivo, preparar o ambiente Ubuntu 20.04 para homologação.
+##### Version: 0.5
 
 ## :neckbeard:Pré Requisitos:
 
