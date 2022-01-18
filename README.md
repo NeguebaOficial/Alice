@@ -2,7 +2,7 @@
 
 Alice tem apenas um objetivo, preparar o ambiente Ubuntu 20.04 para homologação.
 
-## Pré Requisitos::neckbeard:
+## :neckbeard:Pré Requisitos:
 
 - Instalar o git:
     sudo apt-get update
@@ -26,7 +26,7 @@ Alice tem apenas um objetivo, preparar o ambiente Ubuntu 20.04 para homologaçã
 - Executar o script:
     ./GoAlice
   
-## Conclusão::floppy_disk:
+## :floppy_disk:Conclusão:
 - Repositórios atualizados;
 - Upgrade realizado;
 - PulseSecure instalado;
@@ -34,4 +34,4 @@ Alice tem apenas um objetivo, preparar o ambiente Ubuntu 20.04 para homologaçã
 - NetTools instalado;
 - Homolog.sh.x copiado na area de trabalho;
 
-### Basta agora conectar na VPN e seguir com procedimento padrão de Homologação.:books:
+### :books:Basta agora conectar na VPN e seguir com procedimento padrão de Homologação.
