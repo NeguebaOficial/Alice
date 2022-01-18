@@ -4,13 +4,14 @@ Alice tem apenas um objetivo, preparar o ambiente Ubuntu 20.04 para homologaçã
 
 ## Pré Requisitos:
 
---> Estar logado como root na pasta /home/mutley;
---> Entrar na pasta Alice (/home/mutley/Alice/);
+- Estar logado como root na pasta /home/mutley;
+- Entrar na pasta Alice:
+    cd /home/mutley/Alice
 
---> Dar permissão para o arquivo "GoAlice":
+- Dar permissão para o arquivo "GoAlice":
     chmod +x GoAlice
     
---> Executar o script:
+- Executar o script:
     ./GoAlice
   
 ## Conclusão:
