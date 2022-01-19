@@ -12,26 +12,31 @@
     **depois**
     sudo apt-get install git -y
     
+    
 - Logar como root:
 
     sudo su
+    
     
 - Entrar na pasta mutley:
 
     cd /home/mutley
     
+    
 - Clonar pasta Alice:
 
     git clone https://github.com/NeguebaOficial/Alice
     
+    
 - Entrar na pasta Alice:
 
     cd /home/mutley/Alice
+    
 
 - Dar **permissão** para o arquivo **"RunAlice":**
 
-
     chmod +x RunAlice
+    
     
 - Executar o script:
 
