@@ -1,0 +1,59 @@
+#!/bin/bash
+
+# author: Cleiton Ramos dos Santos <sit_cramos@uolinc.com>
+# describe: prepara o equipamento para o homolog
+# version: 0.5
+# licence: MIT License
+
+#Alterando Sources
+cd /etc/apt/
+mv sources.list sources.list.bkp
+
+#Criando novo sources.list com server BR
+echo "deb http://mirror.ufam.edu.br/ubuntu/ focal main restricted" >> sources.list
+echo "deb http://mirror.ufam.edu.br/ubuntu/ focal-updates main restricted" >> sources.list
+echo "deb http://mirror.ufam.edu.br/ubuntu/ focal universe" >> sources.list
+echo "deb http://mirror.ufam.edu.br/ubuntu/ focal-updates universe" >> sources.list
+echo "deb http://mirror.ufam.edu.br/ubuntu/ focal multiverse" >> sources.list
+echo "deb http://mirror.ufam.edu.br/ubuntu/ focal-updates multiverse" >> sources.list
+echo "deb http://mirror.ufam.edu.br/ubuntu/ focal-backports main restricted universe multiverse" >> sources.list
+echo "deb http://mirror.ufam.edu.br/ubuntu/ focal-security main restricted" >> sources.list
+echo "deb http://mirror.ufam.edu.br/ubuntu/ focal-security universe" >> sources.list
+echo "deb http://mirror.ufam.edu.br/ubuntu/ focal-security multiverse" >> sources.list
+
+#Repo para instalar o libwebkitgtk
+echo "deb http://cz.archive.ubuntu.com/ubuntu bionic main universe" >> sources.list
+#Repo Anydesk
+echo "deb http://deb.anydesk.com/ all main" >> sources.list
+
+#Adicionando permissão AnyDesk
+wget -qO - https://keys.anydesk.com/repos/DEB-GPG-KEY | apt-key add -
+
+#Tunando Conexao do Dell Latitude 5420 
+echo on | sudo tee /sys/bus/pci/devices/0000\:0016.0/power/control
+
+#Atualizando Repos e Atualizando Apps
+apt-get update -y && apt-get upgrade -y
+
+#Instalando libwebkitgtk
+apt-get install libwebkitgtk-1.0-0 -y
+
+#Instalando AnyDesk
+apt-get install anydesk -y
+
+#Instalando Pulse
+cd /home/mutley/Alice
+chmod +x pulse-9.1R4.x86_64.deb homolog.sh.x
+dpkg -i pulse-9.1R4.x86_64.deb
+
+#Instalando o net-tools
+apt-get install net-tools -y
+
+#Copiando Homolog para Area de Trabalho
+cp homolog.sh.x /home/mutley/Desktop
+
+#Deletando Alice
+chmod 777 /home/mutley/Alice
+rm -rf /home/mutley/Alice
+
+zenity --info --text="HOMOLOG.SH.X ESTÁ NA /HOME/MUTLEY/DESKTOP"
