@@ -2,7 +2,7 @@
 
 ##### Author: Cleiton Ramos dos Santos <sit_cramos@uolinc.com>
 ##### Describe: Alice tem apenas um objetivo, preparar o ambiente Ubuntu 20.04 para homologação.
-##### Version: 0.5
+##### Version: 0.6
 
 ## :neckbeard:Pré Requisitos:
 
@@ -22,11 +22,11 @@
 - Entrar na pasta Alice:
     cd /home/mutley/Alice
 
-- Dar permissão para o arquivo "GoAlice.x":
-    chmod +x GoAlice.x
+- Dar permissão para o arquivo "RunAlice":
+    chmod +x RunAlice
     
 - Executar o script:
-    ./GoAlice.x
+    ./RunAlice
   
 ## :floppy_disk:Conclusão:
 - Repositórios atualizados;
