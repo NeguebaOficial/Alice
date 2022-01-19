@@ -8,9 +8,10 @@
 
 - Instalar o git:
     sudo apt-get update
+    **depois**
     sudo apt-get install git -y
     
-- Estar logado como root:
+- Logar como root:
     sudo su
     
 - Entrar na pasta mutley:
@@ -22,7 +23,7 @@
 - Entrar na pasta Alice:
     cd /home/mutley/Alice
 
-- Dar permissão para o arquivo "RunAlice":
+- Dar **permissão** para o arquivo **"RunAlice":**
     chmod +x RunAlice
     
 - Executar o script:
@@ -31,9 +32,9 @@
 ## :floppy_disk:Conclusão:
 - Repositórios atualizados;
 - Upgrade realizado;
-- PulseSecure instalado;
+**- PulseSecure instalado;**
 - Anydesk instalado;
 - NetTools instalado;
-- Homolog.sh.x copiado na area de trabalho;
+**- Homolog.sh.x copiado na area de trabalho;**
 
-### :books:Basta agora conectar na VPN e seguir com procedimento padrão de Homologação.
+### :books:**Basta agora conectar na VPN e seguir com procedimento padrão de Homologação.**
