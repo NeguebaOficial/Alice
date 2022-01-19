@@ -6,39 +6,39 @@
 
 ## :neckbeard:Pré Requisitos:
 
-- Instalar o git:
+- ##### Instalar o git:
 
     sudo apt-get update
     **depois**
     sudo apt-get install git -y
     
     
-- Logar como root:
+- ##### Logar como root:
 
     sudo su
     
     
-- Entrar na pasta mutley:
+- ##### Entrar na pasta mutley:
 
     cd /home/mutley
     
     
-- Clonar pasta Alice:
+- ##### Clonar pasta Alice:
 
     git clone https://github.com/NeguebaOficial/Alice
     
     
-- Entrar na pasta Alice:
+- ##### Entrar na pasta Alice:
 
     cd /home/mutley/Alice
     
 
-- Dar **permissão** para o arquivo **"RunAlice":**
+- ##### Dar **permissão** para o arquivo **"RunAlice":**
 
     chmod +x RunAlice
     
     
-- Executar o script:
+- ##### Executar o script:
 
     ./RunAlice
   
