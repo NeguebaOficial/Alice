@@ -30,7 +30,7 @@ echo "deb http://deb.anydesk.com/ all main" >> sources.list
 wget -qO - https://keys.anydesk.com/repos/DEB-GPG-KEY | apt-key add -
 
 #Tunando Conexao do Dell Latitude 5420 
-echo on | sudo tee /sys/bus/pci/devices/0000\:0016.0/power/control
+echo on | sudo tee /sys/bus/pci/devices/0000\:00\:16.0/power/control
 
 #Atualizando Repos e Atualizando Apps
 apt-get update -y && apt-get upgrade -y
