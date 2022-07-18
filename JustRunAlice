@@ -22,7 +22,7 @@ echo "deb http://mirror.ufam.edu.br/ubuntu/ focal-security universe" >> sources.
 echo "deb http://mirror.ufam.edu.br/ubuntu/ focal-security multiverse" >> sources.list
 
 #Repo Anydesk
-echo "deb http://deb.anydesk.com/ all main" >> sources.list
+echo "deb http://deb.anydesk.com/ all main" > /etc/apt/sources.list.d/anydesk-stable.list
 
 #Adicionando permissão AnyDesk
 wget -qO - https://keys.anydesk.com/repos/DEB-GPG-KEY | apt-key add -
@@ -34,7 +34,8 @@ echo on | sudo tee /sys/bus/pci/devices/0000\:00\:16.0/power/control
 apt-get update -y && apt-get upgrade -y
 
 #Instalando AnyDesk
-apt-get install anydesk -y
+apt update
+apt install anydesk
 
 #Instalando libnss3 (serve para o PulseSecure)
 apt-get install libnss3-tools -y
