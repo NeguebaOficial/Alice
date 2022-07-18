@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # author: Cleiton Ramos dos Santos <sit_cramos@uolinc.com> atual <cleramos@uolinc.com>
-# describe: prepara o equipamento para o homolog
-# version: 0.7
+# describe: Prepara o equipamento para o Homolog.sh.x
+# version: 0.8
 # licence: MIT License
 
 #Alterando Sources
@@ -36,10 +36,13 @@ apt-get update -y && apt-get upgrade -y
 #Instalando AnyDesk
 apt-get install anydesk -y
 
+#Instalando libnss3 (serve para o PulseSecure)
+apt-get install libnss3-tools -y
+
 #Instalando Pulse
 cd /home/mutley/Alice
-chmod +x pulse-9.1R14.x86_64.deb
-dpkg -i pulse-9.1R14.x86_64.deb
+chmod +x Pulse_Ubuntu_22.deb
+dpkg -i Pulse_Ubuntu_22.deb
 
 #Permissão ao Homolog.sh.x
 chmod +x 22QAhomolog.sh.x
