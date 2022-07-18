@@ -38,8 +38,8 @@ apt-get install anydesk -y
 
 #Instalando Pulse
 cd /home/mutley/Alice
-chmod +x pulse_ubuntu22.deb
-dpkg -i pulse_ubuntu22.deb
+chmod +x pulse-9.1R14.x86_64.deb
+dpkg -i pulse-9.1R14.x86_64.deb
 
 #Permissão ao Homolog.sh.x
 chmod +x 22QAhomolog.sh.x
