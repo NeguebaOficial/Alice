@@ -33,14 +33,14 @@
     cd /home/mutley/Alice
     
 
-- ##### Dar **permissão** para o arquivo **"RunAlice":**
+- ##### Dar **permissão** para o arquivo **"JustRunAlice":**
 
-    chmod +x RunAlice
+    chmod +x JustRunAlice
     
     
 - ##### Executar o script:
 
-    ./RunAlice
+    ./JustRunAlice
   
 ## :floppy_disk:Conclusão:
 - Repositórios atualizados;
